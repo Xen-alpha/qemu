@@ -146,3 +146,5 @@ endif
 system_ss.add(when: 'CONFIG_OMAP', if_true: files('omap_lcdc.c'))
 
 modules += { 'hw-display': hw_display_modules }
+system_ss.add(when: 'CONFIG_ROCKCHIP_VOP', if_true: files('rockchip_vop.c'))
+system_ss.add(when: 'CONFIG_DW_MIPI_DSI', if_true: files('dw_mipi_dsi.c'))

@@ -182,3 +182,9 @@ system_ss.add(when: 'CONFIG_AXIADO_CLK', if_true: files('axiado_clk.c'))
 
 # Qualcomm Hexagon DSP subsystems
 system_ss.add(when: 'CONFIG_QCOM_QDSP6SS_CLK', if_true: files('qcom-qdsp6ss-clk.c'))
+system_ss.add(when: 'CONFIG_ROCKCHIP_GRF', if_true: files('rockchip_grf.c'))
+system_ss.add(when: 'CONFIG_RK3326_CRU', if_true: files('rk3326_cru.c', 'rk3326_pmu.c'))
+system_ss.add(when: 'CONFIG_ROCKCHIP_PWM', if_true: files('rockchip_pwm.c'))
+system_ss.add(when: 'CONFIG_ROCKCHIP_TSADC', if_true: files('rockchip_tsadc.c'))
+system_ss.add(when: 'CONFIG_ROCKCHIP_IOMMU', if_true: files('rockchip_iommu.c'))
+system_ss.add(when: 'CONFIG_RK817', if_true: files('rk817.c'))

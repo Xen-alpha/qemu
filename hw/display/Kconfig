@@ -158,3 +158,9 @@ config MAC_PVG_PCI
     bool
     depends on MAC_PVG && PCI
     default y if PCI_DEVICES
+
+config ROCKCHIP_VOP
+    bool
+
+config DW_MIPI_DSI
+    bool
