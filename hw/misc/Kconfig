@@ -303,3 +303,22 @@ source macio/Kconfig
 
 config QCOM_QDSP6SS_CLK
     bool
+
+config ROCKCHIP_GRF
+    bool
+
+config RK3326_CRU
+    bool
+
+config ROCKCHIP_PWM
+    bool
+
+config ROCKCHIP_TSADC
+    bool
+
+config ROCKCHIP_IOMMU
+    bool
+
+config RK817
+    bool
+    depends on I2C

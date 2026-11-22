@@ -90,6 +90,7 @@ Board-specific documentation
    arm/kzm
    arm/nrf
    arm/nuvoton
+   arm/odroid-go-advance
    arm/imx25-pdk
    arm/mcimx6ul-evk
    arm/mcimx7d-sabre

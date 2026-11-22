@@ -774,3 +774,39 @@ config AXIADO_EVK
     default y
     depends on TCG && ARM
     select AXIADO_SOC
+
+config RK3326
+    bool
+    depends on TCG && AARCH64
+    select ARM_GIC
+    select PL330
+    select OR_IRQ
+    select PTIMER
+    select SERIAL_MM
+    select UNIMP
+    select USB_EHCI_SYSBUS
+    select USB_OHCI_SYSBUS
+    select USB_DWC2
+    select SD
+    select ROCKCHIP_GRF
+    select RK3326_CRU
+    select ROCKCHIP_PWM
+    select ROCKCHIP_TSADC
+    select ROCKCHIP_IOMMU
+    select ROCKCHIP_OTP
+    select ROCKCHIP_GPIO
+    select ROCKCHIP_I2C
+    select ROCKCHIP_SARADC
+    select ROCKCHIP_TIMER
+    select DW_WDT
+    select DW_MMC
+    select ROCKCHIP_SFC
+    select ROCKCHIP_VOP
+    select DW_MIPI_DSI
+
+config ODROID_GO_ADVANCE
+    bool
+    default y
+    depends on TCG && AARCH64
+    select RK3326
+    select RK817
